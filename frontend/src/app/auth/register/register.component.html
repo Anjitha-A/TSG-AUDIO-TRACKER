@@ -1,0 +1,51 @@
+<form (ngSubmit)="register()" [formGroup]="registerForm" novalidate >
+    <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
+      Username or password incorrect.
+    </div>
+	  <div class="container-fluid d-flex justify-content-center vh-100">
+	      <div class="d-flex flex-column justify-content-between">
+		        <div class="card mt-5 p-5">
+			          <div class="logo mb-3"></div>
+				      <div><h4 class="mb-5 text-white text-center"> AUDIO TRACKER</h4></div>
+				      <a routerLink="/login">
+                <button class="btn btn-primary btn-lg btn_align"><small>Already have account</small><span><br>&nbsp;Sign In </span>
+					      </button>
+				      </a>			
+		        </div>
+		        <div class="card two bg-white px-5 py-4 mb-5">
+					<div class="form-group"></div>
+			            <div class="form-group">
+				                  <input type="text" class="form-control" id="username" required formControlName="fullname">
+				                  <label class="form-control-placeholder text-dark" for="name">Full Name</label>
+                          <small [hidden]="registerForm.controls['fullname'].valid || registerForm.controls['fullname'].untouched" class="text-danger" translate>
+							Fullname is required
+                          </small>      
+			            </div>
+			        <div class="form-group"></div>
+			            <div class="form-group">
+				                  <input type="text" class="form-control" id="username" required formControlName="username">
+				                  <label class="form-control-placeholder text-dark" for="name">User Name</label>
+                          <small [hidden]="registerForm.controls['username'].valid || registerForm.controls['username'].untouched" class="text-danger" translate>
+                           Username is required
+                          </small>      
+			            </div>
+                  <div class="form-group">
+				                  <input type="password" class="form-control" id="password" required formControlName="password">
+				                  <label class="form-control-placeholder text-dark" for="password">Password</label>
+                          <small [hidden]="registerForm.controls['password'].valid || registerForm.controls['password'].untouched" class="text-danger" translate>
+                            Password is required
+                           </small>      
+				                  
+		            	</div>	
+				          <button class="btn btn-primary btn-block btn-lg mt-1 mb-2" type="submit" [disabled]="registerForm.invalid || isLoading">
+                       <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+					              <a  class="button_text">REGISTER<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+				          </button>
+                  <!-- <button class="btn btn-primary w-100" type="submit" [disabled]="loginForm.invalid || isLoading">
+                    <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+                    <span translate>Login</span>
+                  </button> -->
+		   </div>
+	  </div>
+  </div>
+</form>

@@ -1,0 +1,57 @@
+<!-- <div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
+      <span translate>Hello world !</span>
+    </h1>
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <q [hidden]="isLoading">{{ quote }}</q>
+  </div>
+</div> -->
+<!-- 
+<div class="container-fluid full_bg">
+    <div class="row flex-nowrap"> -->
+        
+    
+        <div class="col py-3 container-fluid full_bg">
+            <div class="admin_audiolist_content">
+                <h1 class="text-dark heading cursive">Audio List</h1>
+                <a routerLink="/add_audio"><button type="button" class="btn btn-dark add_button">Add Audio</button></a>
+                <table class="table table-striped table-position" >
+                    <thead>
+                      <tr>
+                       
+                        <th scope="col">Track ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Album</th>
+                        <!-- <th scope="col">Image</th> -->
+                        
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr *ngFor="let i of audios">
+                        <td>{{i.trackid}}</td>
+                        <td>{{i.title}}</td>
+                        <td>{{i.artist}}</td>
+                        <td>{{i.category}}</td>
+                        <td>{{i.album}}</td>
+                        <!-- <td>{{i.image}}</td> -->
+                        <td>
+                          <button type="button" class="btn btn-dark add_button" (click) = "edit(i.trackid)" >Edit</button>
+                            <button type="button" class="btn btn-dark" (click) = "delete(i.trackid)" >Delete</button>
+                          
+                        </td>
+
+                    </tr>
+                          
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+    <!-- </div>
+  </div> -->

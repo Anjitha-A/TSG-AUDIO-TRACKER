@@ -1,0 +1,117 @@
+<!-- <div class="login-container bg-light">
+  <div class="login-box">
+    <h1 translate>APP_NAME</h1>
+    <div>
+      <h6 class="d-inline-block">v{{ version }}</h6>
+      <div class="d-inline-block ml-3">
+        <app-language-selector></app-language-selector>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card col-md-6 mt-3 mx-auto">
+        <div class="card-body">
+          <h4 class="card-title text-center">
+            <i class="far fa-3x fa-user-circle text-muted"></i>
+          </h4>
+          <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+            <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
+              Username or password incorrect.
+            </div>
+            <div class="m-3">
+              <label class="d-block my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="username"
+                  autocomplete="username"
+                  [placeholder]="'Username' | translate"
+                />
+                <span hidden translate>Username</span>
+                <small
+                  [hidden]="loginForm.controls['username'].valid || loginForm.controls['username'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                  Username is required
+                </small>
+              </label>
+              <label class="d-block mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  formControlName="password"
+                  autocomplete="current-password"
+                  [placeholder]="'Password' | translate"
+                  required
+                />
+                <span hidden translate>Password</span>
+                <small
+                  [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                  Password is required
+                </small>
+              </label>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" formControlName="remember" />
+                  <span translate>Remember me</span>
+                </label>
+              </div>
+            </div>
+            <div class="m-3">
+              <button class="btn btn-primary w-100" type="submit" [disabled]="loginForm.invalid || isLoading">
+                <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+                <span translate>Login</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<form (ngSubmit)="login()" [formGroup]="loginForm" novalidate >
+    <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
+      Username or password incorrect.
+    </div>
+	  <div class="container-fluid d-flex justify-content-center vh-100">
+	      <div class="d-flex flex-column justify-content-between">
+		        <div class="card mt-5 p-5">
+			          <div class="logo mb-3"></div>
+				      <div><h4 class="mb-5 text-white text-center"> AUDIO TRACKER</h4></div>
+				      <a routerLink="/register">
+                <button class="btn btn-primary btn-lg btn_align"><small>New User</small><span><br>&nbsp;Sign Up </span>
+					      </button>
+				      </a>			
+		        </div>
+		        <div class="card two bg-white px-5 py-4 mb-5">
+			        <div class="form-group"></div>
+			            <div class="form-group">
+				                  <input type="text" class="form-control" id="username" required formControlName="username">
+				                  <label class="form-control-placeholder text-dark" for="name">User Name</label>
+                          <small [hidden]="loginForm.controls['username'].valid || loginForm.controls['username'].untouched" class="text-danger" translate>
+                           Username is required
+                          </small>      
+			            </div>
+                  <div class="form-group">
+				                  <input type="password" class="form-control" id="password" required formControlName="password">
+				                  <label class="form-control-placeholder text-dark" for="password">Password</label>
+                          <small [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].untouched" class="text-danger" translate>
+                            Password is required
+                           </small>      
+				                  
+		            	</div>	
+				          <button class="btn btn-primary btn-block btn-lg mt-1 mb-2" type="submit" [disabled]="loginForm.invalid || isLoading">
+                       <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+					              <a  class="button_text">LOGIN<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+				          </button>
+                  <!-- <button class="btn btn-primary w-100" type="submit" [disabled]="loginForm.invalid || isLoading">
+                    <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+                    <span translate>Login</span>
+                  </button> -->
+		   </div>
+	  </div>
+  </div>
+</form>

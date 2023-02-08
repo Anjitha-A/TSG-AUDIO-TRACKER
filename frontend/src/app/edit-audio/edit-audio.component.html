@@ -1,0 +1,55 @@
+<!-- 
+
+<div class="col py-3 container-fluid full_bg">
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content form_bottom">
+                    <div class="form-items">
+                        <h3 class="heading-add-audio">Add Audios</h3>
+                      
+                        <form class="requires-validation"  [formGroup]="editForm" novalidate>
+                            <div class="col-md-12 ">
+                                <label>Track Title *</label>
+                                <input class="form-control" type="text" formControlName="title" name="text"  required>
+                                <small [hidden]="editForm.controls['title'].valid || editForm.controls['title'].untouched" class="text-danger" translate>
+                                    Track Title is required
+                                   </small>                         
+                            </div>
+                            <div class="col-md-12 ">
+                                <label>Artist *</label>
+                                <input class="form-control" type="text" formControlName="artist" name="text"  required>
+                                <small [hidden]="editForm.controls['artist'].valid || editForm.controls['artist'].untouched" class="text-danger" translate>
+                                    Artist is required
+                                   </small>   
+                                                        
+                            </div>
+                            <div class="col-md-12">
+                                <label>Category *</label>
+                                    <select class="form-select mt-3"  formControlName="category" id="category"  required>
+                                        <option *ngFor="let i of category" [value]="i.id" >{{i.category}}</option>                                                                          
+                                   </select> 
+                                   <small [hidden]="editForm.controls['category'].valid || editForm.controls['category'].untouched" class="text-danger" translate>
+                                    Category is required
+                                   </small>                                          
+                               </div>
+                            <div class="col-md-12 ">
+                                <label>Album *</label>
+                                <input class="form-control" type="text" formControlName="album" name="text"  required> 
+                                <small [hidden]="editForm.controls['album'].valid || editForm.controls['album'].untouched" class="text-danger" translate>
+                                    Album is required
+                                   </small>                                                                 
+                            </div>
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary" ></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+ -->

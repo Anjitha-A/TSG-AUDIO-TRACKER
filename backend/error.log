@@ -1,0 +1,26 @@
+2023-02-04 20:17:03,369 - services.logger - ERROR - KeyError: 'password'
+2023-02-04 20:19:01,627 - services.logger - ERROR - KeyError: 'rating'
+2023-02-06 20:53:39,580 - services.logger - ERROR - KeyError: 'title'
+2023-02-06 20:53:50,368 - services.logger - ERROR - KeyError: 'title'
+2023-02-06 21:35:01,609 - services.logger - ERROR - KeyError: 'usertype'
+2023-02-06 21:52:46,251 - services.logger - ERROR - KeyError: 'categoryid'
+2023-02-06 22:31:38,773 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 22:43:07,398 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:45:05,878 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:45:50,853 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:47:15,063 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:48:01,340 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 22:48:52,992 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 22:49:10,322 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:53:26,831 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:53:41,222 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:56:17,186 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 22:58:20,067 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:58:59,638 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 22:59:50,715 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 23:00:37,051 - services.logger - ERROR - IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`audio_tracker`.`audio`, CONSTRAINT `audio_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2023-02-06 23:06:34,065 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 23:06:53,197 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 23:07:51,043 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-06 23:12:05,755 - services.logger - ERROR - KeyError: 'category_id'
+2023-02-08 12:34:24,993 - services.logger - ERROR - KeyError: 'category_id'

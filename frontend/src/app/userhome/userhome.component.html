@@ -1,0 +1,48 @@
+<div class="container user-body">
+    <div>
+        <p></p>
+    </div>
+    <button class=" btn btn-dark cursive logout-btn"(click)="logout()" >
+        <a >Logout</a>
+    </button>
+    <div>
+        <div class="heading text-light cursive head_align">
+            <h1><i class="fa-solid fa-music homeicon  fa-xl"></i>
+                Audio Tracker
+            </h1>
+        </div>
+    </div>
+    <!-- <div class="">
+        <h1 class="text-light cursive ">  <i class="fa-solid fa-music homeicon  fa-xl"></i>&nbsp;Audio Tracker</h1>
+    </div> -->
+    <form    class="d-flex search-icon search" role="search" (ngSubmit)="search()" [formGroup]="searchForm" novalidate>
+      <input class="form-control me-2 bg-dark text-light" type="search" formControlName="search_value"placeholder="Search here" aria-label="Search">
+      
+          <button class=" btn btn-dark cursive" type="submit" >
+              <a >Search&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a>
+          </button>&nbsp;
+          <!-- <button class=" btn btn-dark cursive" (click)= "back()" >
+            <a >Home&nbsp;<i class="fa-solid fa-backward"></i></a>
+        </button> -->
+          
+    
+      
+    </form>
+    <div class="cards-area border-light" >     
+          <div class="row card-width">          
+              <div class="card border-secondary col-3 m-2 fill"   *ngFor="let audio of audios" style="width: 18rem;">
+                  <img  class="card-img-top" alt="..."src="https://images.pexels.com/photos/1644616/pexels-photo-1644616.jpeg?auto=compress&cs=tinysrgb&w=600" >
+                  <div class="card-body">
+                    <p class="card-title cursive btn_align track_name_align text-light"> <b>{{audio.title}} </b></p>
+                    <p class="card-text cursive  text-light"><b>Album : {{audio.album}} </b> </p> 
+                    <button class="btn btn-dark cursive "(click)="view(audio.trackid)" >View Details</button>     
+                    <div class="rating">
+                      <ng-container >
+                        <br><i class="fa-solid fa-star"   ></i>
+                      </ng-container>
+                    </div>                               
+                  </div>
+                </div>&nbsp;
+          </div>
+    </div>
+</div> 

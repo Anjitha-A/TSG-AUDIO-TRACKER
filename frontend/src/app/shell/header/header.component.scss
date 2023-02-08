@@ -1,0 +1,21 @@
+@import "src/theme/theme-variables";
+
+.navbar {
+  margin-bottom: $spacer;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+.audiotracker-heading{
+  color: white;
+  text-align: center;
+  margin-left: 650px;
+}
+.nav-menus{
+  color: white;
+  margin-left: 300px;
+}
+.homeicon{
+  color: white;
+}
